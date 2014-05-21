@@ -472,6 +472,7 @@ NSString *class_dump_class(Class class) {
 }
 
 BOOL isSystemClass(Class class) {
+#if 0
 	const char *name = class_getName(class);
 	
 	const char *cmp_name = name;
@@ -480,9 +481,10 @@ BOOL isSystemClass(Class class) {
 		cmp_name++;
 	}
 	
-	/*if(strncmp("NS", cmp_name, 2) == 0 || strncmp("CF", cmp_name, 2) == 0 || strncmp("OS", cmp_name, 2) == 0 || strncmp("DD", cmp_name, 2) == 0 || strncmp("MD", cmp_name, 2) == 0 || strncmp("XN", cmp_name, 2) == 0) {
+	if(strncmp("NS", cmp_name, 2) == 0 || strncmp("CF", cmp_name, 2) == 0 || strncmp("OS", cmp_name, 2) == 0 || strncmp("DD", cmp_name, 2) == 0 || strncmp("MD", cmp_name, 2) == 0 || strncmp("XN", cmp_name, 2) == 0) {
 		return YES;
-	}*/
+	}
+#endif
 	
 	void *address = (__bridge void *)class;
 	
