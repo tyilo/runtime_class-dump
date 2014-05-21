@@ -20,7 +20,7 @@ struct test {
 	const char *ivar2;
 }
 
-@property (readonly) id property1;
+@property (readonly, getter=getter1, setter=setter1:) id property1;
 @property (atomic) struct test property2;
 
 + (int)classMethod:(int [10])arg0;
