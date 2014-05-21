@@ -38,10 +38,6 @@
 		55ED7895191A9100003E4610 /* tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tests.h; sourceTree = "<group>"; };
 		55ED7896191A9100003E4610 /* tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tests.m; sourceTree = "<group>"; };
 		55ED789D191A924F003E4610 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		55ED78A1191A924F003E4610 /* runtime_class-dump Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "runtime_class-dump Tests-Info.plist"; sourceTree = "<group>"; };
-		55ED78A3191A924F003E4610 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		55ED78A5191A924F003E4610 /* runtime_class_dump_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = runtime_class_dump_Tests.m; sourceTree = "<group>"; };
-		55ED78A7191A924F003E4610 /* runtime_class-dump Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "runtime_class-dump Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				554E340B19194E9F00D29311 /* runtime_class-dump */,
-				55ED789F191A924F003E4610 /* runtime_class-dump Tests */,
 				554E340819194E9F00D29311 /* Frameworks */,
 				554E340719194E9F00D29311 /* Products */,
 			);
@@ -102,25 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				554E340F19194E9F00D29311 /* runtime_class-dump-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		55ED789F191A924F003E4610 /* runtime_class-dump Tests */ = {
-			isa = PBXGroup;
-			children = (
-				55ED78A5191A924F003E4610 /* runtime_class_dump_Tests.m */,
-				55ED78A0191A924F003E4610 /* Supporting Files */,
-			);
-			path = "runtime_class-dump Tests";
-			sourceTree = "<group>";
-		};
-		55ED78A0191A924F003E4610 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				55ED78A1191A924F003E4610 /* runtime_class-dump Tests-Info.plist */,
-				55ED78A2191A924F003E4610 /* InfoPlist.strings */,
-				55ED78A7191A924F003E4610 /* runtime_class-dump Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,17 +160,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		55ED78A2191A924F003E4610 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				55ED78A3191A924F003E4610 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		554E341219194E9F00D29311 /* Debug */ = {
