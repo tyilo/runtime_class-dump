@@ -220,7 +220,8 @@ NSArray *typeStringFromEncoding(const char *typeEncoding, NSUInteger *end) {
 		
 		*end = realEnd + 1;
 	} else if([typeEnc hasPrefix:@"\""]) {
-		
+		// This occurs sometimes, but I forgot what to do :/
+		assert(0);
 	} else {
 		NSString *basicType = basicTypeFromEncoding(typeEncoding);
 		//assert(basicType);
